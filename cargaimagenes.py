@@ -6,4 +6,5 @@ print(IRGB)
 print(IRGB.shape)
 print("lineas agregadas en mai")
 print(IGS)
+print(IGS.shape)
 
