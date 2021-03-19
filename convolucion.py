@@ -14,6 +14,10 @@ def convolucion(Ioriginal,Kernel):
                      for n in range(len(Kernel[0])):
                          suma+=Kernel[m][n]*Ioriginal[m+i][n+j]
                          Resultado[i][j]=suma
+                 if suma <= 255:
+                     Resultado [i][j] = round(suma)
+                 else:
+                     Resultado [i][j] = 255
         return Resultado
 #imagenes
 K=[[-1,0,1],[-1,0,1],[-1,0,1]]
